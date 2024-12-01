@@ -9,7 +9,7 @@ This guide covers methods for enumerating and exploiting SMB (Server Message Blo
 3. **smbclient** - A command-line client for SMB that can be used for interacting with shares.
 
 ## ✏️ QUERY Search Engine 
-1. **FOFA** => Port="445" && "NASA"
+1. **FOFA** => protocol="smb" && banner="Wordpress"
 2. **SHODAN** => port:445 has_smb:true
 3. **CENSYS** => services.smb.port:445
 4. **ZOOM EYE** => port:445
