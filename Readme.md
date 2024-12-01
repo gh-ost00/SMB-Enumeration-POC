@@ -101,3 +101,9 @@ These tools and techniques are useful for discovering SMB shares and identifying
 - [smbmap GitHub Repository](https://github.com/ShawnDEvans/smbmap)
 - [smbclient Manual](https://linux.die.net/man/1/smbclient)
 
+## 💰 Support Me  
+
+If you find this work helpful, you can support me:  
+- [![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://buymeacoffee.com/ghost_sec)  
+
+Thanks for your support! ❤️
