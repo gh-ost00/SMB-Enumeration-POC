@@ -1,21 +1,27 @@
 
-# SMB Enumeration and Exploitation Guide
+# ⚠️ SMB Enumeration and Exploitation Guide
 
 This guide covers methods for enumerating and exploiting SMB (Server Message Block) shares using various tools like `nmap`, `smbmap`, and `smbclient`. SMB is a protocol used for sharing files, printers, and other network services, and misconfigurations in SMB services can often lead to security vulnerabilities.
 
-## Tools Required
+## 🔨 Tools Required
 1. **nmap** - A network scanning tool that can discover SMB services and enumerate shares.
 2. **smbmap** - A Python tool to enumerate SMB shares and check permissions.
 3. **smbclient** - A command-line client for SMB that can be used for interacting with shares.
 
-## Prerequisites
+## ✏️ QUERY Search Engine 
+1. **FOFA** => Port="445" && "NASA"
+2. **SHODAN** => port:445 has_smb:true
+3. **CENSYS** => services.smb.port:445
+4. **ZOOM EYE** => port:445
+
+## ⌛ Prerequisites
 - Ensure you have permission to scan and access the target system before using these tools.
 - Install the required tools:
   - `nmap`: Install with `sudo apt install nmap`.
   - `smbmap`: Install with `pip install smbmap`.
   - `smbclient`: Install with `sudo apt install smbclient`.
 
-## Steps to Enumerate SMB Shares
+## ✍🏻 Steps to Enumerate SMB Shares
 
 ### 1. Using `nmap` to Enumerate SMB Shares
 You can use `nmap` to scan for open SMB ports (usually port 445) and enumerate SMB shares. Here's the basic command to run a scan on a target:
