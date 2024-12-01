@@ -58,6 +58,10 @@ This will attempt to list the available SMB shares. You can add additional optio
 ```bash
 smbmap -H 192.168.1.100 -p 445
 ```
+### Mass scanning Open ports :
+```bash
+cat smb-targets.txt | xargs -I {} smbmap -H {} -p 445
+```
 
 ### 3. Using `smbclient` to Access SMB Shares
 `smbclient` is a command-line tool that allows you to interact with SMB shares directly. To connect to a share, use the following command:
