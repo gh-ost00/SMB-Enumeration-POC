@@ -83,7 +83,7 @@ smbclient //192.168.1.100/public -U guest
 
 3. **Unnecessary Shares**: Some systems may expose unnecessary or sensitive shares. Always check for shares like `ADMIN$`, `C$`, `IPC$`, etc.
 
-## Example of Exploiting Write Access
+## 📝 Example of Exploiting Write Access
 If you discover a share with write permissions, you can upload a malicious file or script using `smbclient`. Here’s an example of uploading a file:
 
 ```bash
