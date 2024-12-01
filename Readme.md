@@ -38,6 +38,10 @@ Explanation of the flags:
 ```bash
 nmap -p 445 --script smb-enum-shares.nse 192.168.1.100
 ```
+### Mass scanning & Detect Vulnrable :
+```bash
+nmap -p 445 --script smb-vuln* -iL targets.txt -T4 --max-retries 3
+```
 
 This will provide you with a list of SMB shares on the target system.
 
