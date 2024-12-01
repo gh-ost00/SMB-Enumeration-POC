@@ -75,7 +75,7 @@ Once connected, you can run commands like `ls` to list files and `get <file>` to
 smbclient //192.168.1.100/public -U guest
 ```
 
-## Common SMB Misconfigurations
+## ✏️ Common SMB Misconfigurations
 
 1. **Anonymous Access**: If a share allows guest access without authentication, this is a potential security risk. You can test this using `smbclient` or check with `nmap` and `smbmap`.
 
@@ -93,10 +93,10 @@ put /path/to/local/file.txt
 
 This will upload `file.txt` to the `public` share on the target.
 
-## Conclusion
+## ⚠️ Conclusion
 These tools and techniques are useful for discovering SMB shares and identifying potential vulnerabilities due to misconfigurations. Be cautious when testing these methods and ensure that you have authorization to access the systems you are scanning.
 
-## Additional Resources
+## 🔔 Additional Resources
 - [nmap SMB Enumeration Script](https://nmap.org/nsedoc/scripts/smb-enum-shares.html)
 - [smbmap GitHub Repository](https://github.com/ShawnDEvans/smbmap)
 - [smbclient Manual](https://linux.die.net/man/1/smbclient)
