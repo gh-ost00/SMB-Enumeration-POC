@@ -67,7 +67,7 @@ cat smb-targets.txt | xargs -I {} smbmap -H {} -p 445
 `smbclient` is a command-line tool that allows you to interact with SMB shares directly. To connect to a share, use the following command:
 
 ```bash
-smbclient //target_ip/share_name -U username
+smbclient //target_ip/share_name -U username {{Example = guest,root,admin,user,Administrator@<domain_name>}}
 ```
 
 If you want to access the share without providing a username (e.g., for anonymous access), you can omit the `-U` flag:
@@ -80,7 +80,7 @@ Once connected, you can run commands like `ls` to list files and `get <file>` to
 
 ### Example:
 ```bash
-smbclient //192.168.1.100/public -U guest
+smbclient //192.168.1.100/public -U {{Example = guest,root,admin,user,Administrator@<domain_name>}}
 ```
 
 ## ✏️ Common SMB Misconfigurations
